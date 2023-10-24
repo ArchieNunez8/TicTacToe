@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:layout_margin="10dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/aclonica"
+        android:shadowColor="@color/white"
+        android:text="Tic Tac Toe"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textColorHighlight="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/txtEnter1Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:fontFamily="@font/aclonica"
+            android:text="Enter player 1 name:"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtPlayer1Name"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/adamina"
+            android:textColor="@color/white"
+            android:textColorHint="@color/material_dynamic_neutral70"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutLinear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layoutLinear"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/txtEnter2Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:fontFamily="@font/aclonica"
+            android:text="Enter player 2 name:"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtPlayer2Name"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/adamina"
+            android:textColor="@color/white"
+            android:textColorHint="@color/material_dynamic_neutral70"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutLinear2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/material_dynamic_primary40"
+        android:fontFamily="@font/aclonica"
+        android:text="START"
+        android:textSize="26sp" />
+
+</RelativeLayout>
